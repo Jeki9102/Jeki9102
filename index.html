@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pink Romantic Theme - I LOVE U NESYA</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+<style>
+  /* Reset and base */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+    color: #880e4f;
+    min-height: 100vh;
+    overflow-x: hidden;
+    user-select: none;
+  }
+  button {
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 36px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ec407a, #d81b60);
+    color: white;
+    box-shadow: 0 8px 20px rgba(216, 27, 96, 0.35);
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  button:hover, button:focus {
+    background: linear-gradient(135deg, #d81b60, #ec407a);
+    outline: none;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(216, 27, 96, 0.5);
+  }
+  button:active {
+    transform: translateY(0) scale(0.95);
+  }
+
+  /* Common container */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 24px;
+    text-align: center;
+  }
+  /* Page 1 */
+  #page1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+  #page1 h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 48px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    user-select: text;
+  }
+  /* Page 2 */
+  #page2 {
+    display: none;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  #page2 h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 48px;
+    color: #ad1457;
+  }
+  .images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 32px;
+    justify-items: center;
+  }
+  .images-grid img {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(216, 27, 96, 0.25);
+    transition: transform 0.35s ease;
+  }
+  .images-grid img:hover,
+  .images-grid img:focus {
+    outline: none;
+    transform: scale(1.07);
+    box-shadow: 0 16px 40px rgba(216, 27, 96, 0.5);
+  }
+
+  /* Hearts trail style */
+  .heart {
+    pointer-events: none;
+    position: fixed;
+    font-size: 20px;
+    color: #d81b60;
+    user-select: none;
+    animation: floatUp 1.2s forwards ease-out;
+    will-change: transform, opacity;
+  }
+
+  @keyframes floatUp {
+    0% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-60px) scale(1.5);
+    }
+  }
+
+  /* Responsive */
+  @media (max-width: 480px) {
+    #page1 h1 {
+      font-size: 2.5rem;
+      margin-bottom: 36px;
+    }
+    #page2 h2 {
+      font-size: 2rem;
+      margin-bottom: 36px;
+    }
+    .images-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .images-grid img {
+      width: 160px;
+      height: 120px;
+    }
+  }
+</style>
+</head>
+<body>
+  <!-- Page 1 -->
+  <section id="page1" class="container" role="main" aria-label="Love message page one">
+    <h1 tabindex="0">I LOVE U SO MUCHHH NESYA</h1>
+    <button id="nextBtn" aria-label="Go to next page">NEXT</button>
+  </section>
+
+  <!-- Page 2 -->
+  <section id="page2" class="container" role="main" aria-label="Love message page two">
+    <h2 tabindex="0">I love you so much</h2>
+    <div class="images-grid">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/050fbb5e-676a-4e3a-b32b-6031f8b787c5.png" alt="Beautiful pink rose bouquet with soft background" tabindex="0" />
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3b7103be-5033-44c6-ad02-c697b6045aed.png" alt="Heart-shaped bouquet of flowers in vibrant pink and red colors" tabindex="0" />
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a4a9c1f4-c5ca-4dbe-b6c9-5e03835bea23.png" alt="Romantic arrangement of flowers with pink heart decorations" tabindex="0" />
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1da2922d-ca87-4d37-a8e2-d85be69c33b7.png" alt="Pink hearts scattered on a soft light pink background" tabindex="0" />
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8833a6eb-5218-4a7a-9be3-6d0751edf0bb.png" alt="Close-up image showing flowers and heart shaped decorations in a romantic theme" tabindex="0" />
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/77975f0e-5819-413e-8b5b-32f9a0469c89.png" alt="Heart formed from flower petals in shades of pink and red" tabindex="0" />
+    </div>
+  </section>
+
+<script>
+  // Navigation between pages
+  const page1 = document.getElementById('page1');
+  const page2 = document.getElementById('page2');
+  const nextBtn = document.getElementById('nextBtn');
+
+  nextBtn.addEventListener('click', () => {
+    page1.style.display = 'none';
+    page2.style.display = 'block';
+    page2.querySelector('h2').focus();
+  });
+
+  // Hearts trail following cursor
+  document.addEventListener('mousemove', function(event) {
+    createHeart(event.clientX, event.clientY);
+  });
+
+  function createHeart(x, y) {
+    const heart = document.createElement('span');
+    heart.classList.add('heart');
+    heart.style.left = x + 'px';
+    heart.style.top = y + 'px';
+    heart.innerHTML = '&#10084;'; // Unicode heart symbol
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 1200); // match animation duration
+  }
+</script>
+</body>
+</html>
+
